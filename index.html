@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joylashuvni aniqlash</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📍 Foydalanuvchi joylashuvini aniqlash</h1>
+    <button id="locBtn">Joylashuvni ko‘rsat</button>
+
+    <div class="info" id="info" style="display:none;">
+      <p><b>Kenglik:</b> <span id="lat">—</span></p>
+      <p><b>Uzunlik:</b> <span id="lon">—</span></p>
+      <p><b>Mamlakat:</b> <span id="country">—</span></p>
+      <p><b>Shahar:</b> <span id="city">—</span></p>
+      <p><b>Manzil:</b> <span id="address">—</span></p>
+    </div>
+
+    <div id="map"></div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
